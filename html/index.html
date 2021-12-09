@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Flächeninhaltsrechner</title>
+    <link rel="stylesheet" href="../css/index.css">
+
+
+</head>
+<body>
+<h1>Herzlich Willkommen zum Flächeninhaltsrechner :-)!</h1>
+<script type='text/javascript'>
+function Quadrat(form) {
+    ergebnis = document.getElementById('hoehe').value * document.getElementById('breite').value;
+    if (ergebnis == 0) {
+        document.getElementById('ausgabe').innerHTML = "Ungültige Eingabe";
+    } else {
+        document.getElementById('ausgabe').innerHTML = "Die Fläche des Quadrats beträgt " + ergebnis + " cm²";
+    }
+}
+</script>
+
+<form>
+<p>Quadrat</p> <br>
+    <h3>
+    <input type="text" name="hoehe" id="hoehe">
+    Höhe des Quadrat in cm<br>
+    <input type="text" name="breite" id="breite">
+    Breite des Quadrat in cm<br>
+        <input name="button" type="button" onClick="Quadrat(this.form)" value="berechnen"></h3>
+        <br>
+    <h4><div id="ausgabe">
+    </div></h4>
+</form>
+<br>
+
+<br>
+</body>
+</html>

@@ -12,6 +12,6 @@ p{ text-align: center;
     color: firebrick;
     font-size: x-large}
 
-head{ align-content: center;}
-body{ align-content: center;}
-img{ align-content: center}
+head{ text-align: center;}
+body{ text-align: center;}
+img{ text-align: center;}

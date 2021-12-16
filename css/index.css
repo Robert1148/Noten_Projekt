@@ -11,3 +11,7 @@ h4{ text-align: center;
 p{ text-align: center;
     color: firebrick;
     font-size: x-large}
+
+head{ align-content: center;}
+body{ align-content: center;}
+img{ align-content: center}

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/index.css">
 
 
-
+</head>
 <body>
 <h1>Herzlich Willkommen zum Flächeninhaltsrechner :-)!</h1>
 <script type='text/javascript'>
@@ -38,34 +38,30 @@ function Rechteck(form) {
 
 </form>
 <br/>
-<img src="../img/Rechner.png" height="212" width="212"/>
-
-<br/>
 
 </form>
 <br/>
 
-
 <script type='text/javascript'>
+function kreis(form) {
     ergebnis = Math.PI * Math.pow(document.getElementById('radius').value,2)
     if (ergebnis == 0) {
-        document.getElementById('ausgabe2').innerHTML = "Ungültige Eingabe";
+        document.getElementById('ausgabe').innerHTML = "Ungültige Eingabe";
     } else {
-        document.getElementById('ausgabe2').innerHTML = "Die Fläche des Kreises beträgt " + ergebnis + " cm²";
+        document.getElementById('ausgabe').innerHTML = "Die Fläche des Kreises beträgt " + ergebnis + " cm²";
     }
-
+}
 
 </script>
 <form>
-
+    <h5 >Kreis</h5>
     <input type="text" name="radius" id="radius" />
     Radius des Kreises in cm<br />
     <input name="button" type="button" onclick="kreis(this.form)" value="berechnen" />
     <br />
+    <br />
+    <h6><div id="ausgabe1"></div></h6>
 </form>
-<h6><div id="ausgabe2"></div>
-</h6>
-<br />
+<img src="../img/Rechner.png" height="212" width="212"/>
 
 </body>
-</html>
